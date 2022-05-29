@@ -7,4 +7,7 @@
     <string name="enter_password">Enter password</string>
     <string name="confirm">Confirm</string>
     <string name="helloString">Hello,</string>
+    <string name="nameString">Enter name</string>
+    <string name="surnameString">Enter surname</string>
+    <string name="errorLogin">Wrong login or password</string>
 </resources>

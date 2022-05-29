@@ -16,17 +16,17 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+    }
 
-        fun onClickSignUp(view: View) {
-            val i = Intent(this, LoginActivity::class.java)
-            i.putExtra("isRegistered", false)
-            startActivity(i)
-        }
+    fun onClickSignUp(view: View) {
+        val i = Intent(this, LoginActivity::class.java)
+        i.putExtra(Constance.REGISTERED_KEY, Constance.notRegistered)
+        startActivity(i)
+    }
 
-        fun onClickLogin(view: View) {
-            val i = Intent(this, LoginActivity::class.java)
-            i.putExtra(Constance.REGISTERED_KEY, true)
-            startActivity(i)
-        }
+    fun onClickLogin(view: View) {
+        val i = Intent(this, LoginActivity::class.java)
+        i.putExtra(Constance.REGISTERED_KEY, Constance.isRegistered)
+        startActivity(i)
     }
 }
